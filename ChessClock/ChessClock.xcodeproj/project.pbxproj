@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1415D83727F9EFE8008A4060 /* GameStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1415D83627F9EFE8008A4060 /* GameStatus.swift */; };
+		1415D83927F9EFFF008A4060 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1415D83827F9EFFF008A4060 /* GameState.swift */; };
 		145C474227F38CAC003F97E0 /* ChessClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145C474127F38CAC003F97E0 /* ChessClockApp.swift */; };
 		145C474427F38CAC003F97E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145C474327F38CAC003F97E0 /* ContentView.swift */; };
 		145C474627F38CAC003F97E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 145C474527F38CAC003F97E0 /* Assets.xcassets */; };
@@ -32,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1415D83627F9EFE8008A4060 /* GameStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStatus.swift; sourceTree = "<group>"; };
+		1415D83827F9EFFF008A4060 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 		145C473E27F38CAC003F97E0 /* ChessClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChessClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		145C474127F38CAC003F97E0 /* ChessClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessClockApp.swift; sourceTree = "<group>"; };
 		145C474327F38CAC003F97E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -67,6 +71,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1415D83527F9EFDA008A4060 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1415D83627F9EFE8008A4060 /* GameStatus.swift */,
+				1415D83827F9EFFF008A4060 /* GameState.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		145C473527F38CAC003F97E0 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +102,7 @@
 		145C474027F38CAC003F97E0 /* ChessClock */ = {
 			isa = PBXGroup;
 			children = (
+				1415D83527F9EFDA008A4060 /* Model */,
 				145C476B27F38CBE003F97E0 /* View */,
 				145C474127F38CAC003F97E0 /* ChessClockApp.swift */,
 				145C474527F38CAC003F97E0 /* Assets.xcassets */,
@@ -251,6 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1415D83927F9EFFF008A4060 /* GameState.swift in Sources */,
+				1415D83727F9EFE8008A4060 /* GameStatus.swift in Sources */,
 				145C474427F38CAC003F97E0 /* ContentView.swift in Sources */,
 				145C474227F38CAC003F97E0 /* ChessClockApp.swift in Sources */,
 			);
