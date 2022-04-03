@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1415D83727F9EFE8008A4060 /* GameStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1415D83627F9EFE8008A4060 /* GameStatus.swift */; };
 		1415D83927F9EFFF008A4060 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1415D83827F9EFFF008A4060 /* GameState.swift */; };
+		1415D84227FA12D7008A4060 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1415D84127FA12D7008A4060 /* ColorPalette.swift */; };
 		145C474227F38CAC003F97E0 /* ChessClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145C474127F38CAC003F97E0 /* ChessClockApp.swift */; };
 		145C474427F38CAC003F97E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145C474327F38CAC003F97E0 /* ContentView.swift */; };
 		145C474627F38CAC003F97E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 145C474527F38CAC003F97E0 /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* Begin PBXFileReference section */
 		1415D83627F9EFE8008A4060 /* GameStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStatus.swift; sourceTree = "<group>"; };
 		1415D83827F9EFFF008A4060 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		1415D84127FA12D7008A4060 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		145C473E27F38CAC003F97E0 /* ChessClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChessClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		145C474127F38CAC003F97E0 /* ChessClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessClockApp.swift; sourceTree = "<group>"; };
 		145C474327F38CAC003F97E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +82,14 @@
 				1415D83827F9EFFF008A4060 /* GameState.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1415D83A27F9F826008A4060 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1415D84127FA12D7008A4060 /* ColorPalette.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		145C473527F38CAC003F97E0 = {
@@ -133,6 +143,7 @@
 		145C476B27F38CBE003F97E0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1415D83A27F9F826008A4060 /* Extensions */,
 				145C474327F38CAC003F97E0 /* ContentView.swift */,
 			);
 			path = View;
@@ -281,6 +292,7 @@
 				145C476E27F38D4D003F97E0 /* ClockService.swift in Sources */,
 				145C474427F38CAC003F97E0 /* ContentView.swift in Sources */,
 				145C474227F38CAC003F97E0 /* ChessClockApp.swift in Sources */,
+				1415D84227FA12D7008A4060 /* ColorPalette.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
