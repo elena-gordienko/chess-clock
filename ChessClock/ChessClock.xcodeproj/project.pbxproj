@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1415D83427F9DFF1008A4060 /* WatchfaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1415D83327F9DFF1008A4060 /* WatchfaceView.swift */; };
 		1415D83727F9EFE8008A4060 /* GameStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1415D83627F9EFE8008A4060 /* GameStatus.swift */; };
 		1415D83927F9EFFF008A4060 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1415D83827F9EFFF008A4060 /* GameState.swift */; };
 		1415D84227FA12D7008A4060 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1415D84127FA12D7008A4060 /* ColorPalette.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1415D83327F9DFF1008A4060 /* WatchfaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchfaceView.swift; sourceTree = "<group>"; };
 		1415D83627F9EFE8008A4060 /* GameStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameStatus.swift; sourceTree = "<group>"; };
 		1415D83827F9EFFF008A4060 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 		1415D84127FA12D7008A4060 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			children = (
 				1415D83A27F9F826008A4060 /* Extensions */,
 				145C474327F38CAC003F97E0 /* ContentView.swift */,
+				1415D83327F9DFF1008A4060 /* WatchfaceView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1415D83927F9EFFF008A4060 /* GameState.swift in Sources */,
+				1415D83427F9DFF1008A4060 /* WatchfaceView.swift in Sources */,
 				1415D83727F9EFE8008A4060 /* GameStatus.swift in Sources */,
 				145C476E27F38D4D003F97E0 /* ClockService.swift in Sources */,
 				145C474427F38CAC003F97E0 /* ContentView.swift in Sources */,
