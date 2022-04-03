@@ -17,6 +17,7 @@
 		145C474927F38CAC003F97E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 145C474827F38CAC003F97E0 /* Preview Assets.xcassets */; };
 		145C475327F38CAC003F97E0 /* ChessClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145C475227F38CAC003F97E0 /* ChessClockTests.swift */; };
 		145C476E27F38D4D003F97E0 /* ClockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145C476D27F38D4D003F97E0 /* ClockService.swift */; };
+		145C477227F3903D003F97E0 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145C477127F3903D003F97E0 /* ClockView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		145C475227F38CAC003F97E0 /* ChessClockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChessClockTests.swift; sourceTree = "<group>"; };
 		145C475827F38CAC003F97E0 /* ChessClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChessClockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		145C476D27F38D4D003F97E0 /* ClockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockService.swift; sourceTree = "<group>"; };
+		145C477127F3903D003F97E0 /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 			children = (
 				1415D83A27F9F826008A4060 /* Extensions */,
 				145C474327F38CAC003F97E0 /* ContentView.swift */,
+				145C477127F3903D003F97E0 /* ClockView.swift */,
 				1415D83327F9DFF1008A4060 /* WatchfaceView.swift */,
 			);
 			path = View;
@@ -294,6 +297,7 @@
 				1415D83427F9DFF1008A4060 /* WatchfaceView.swift in Sources */,
 				1415D83727F9EFE8008A4060 /* GameStatus.swift in Sources */,
 				145C476E27F38D4D003F97E0 /* ClockService.swift in Sources */,
+				145C477227F3903D003F97E0 /* ClockView.swift in Sources */,
 				145C474427F38CAC003F97E0 /* ContentView.swift in Sources */,
 				145C474227F38CAC003F97E0 /* ChessClockApp.swift in Sources */,
 				1415D84227FA12D7008A4060 /* ColorPalette.swift in Sources */,
