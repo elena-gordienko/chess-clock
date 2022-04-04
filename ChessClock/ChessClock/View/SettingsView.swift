@@ -16,25 +16,16 @@ struct SettingsView: View {
     var body: some View {
         ZStack {
             Color.Palette.background.ignoresSafeArea()
-            VStack(alignment: .leading, spacing: 20) {
-                Text("Pick time limit")
-                    .font(.largeTitle)
-                    .tint(Color.Palette.primaryText)
-                Picker(selection: $selectedTime, label: Text("Pick time limit per player")) {
-                    ForEach(Array(TimeSettings.allCases), id: \.self) {
-                        Text($0.name)
-                            .font(.largeTitle)
-                            .tint(Color.Palette.primaryText)
-                    }
+            HStack(alignment: .top) {
+                VStack(alignment: .leading) {
+                    backButton
+                        .padding(.vertical, 10)
+                    picker
+                        .padding(.horizontal, 56)
+                    Spacer()
                 }
-                Button {
-                    presentationMode.wrappedValue.dismiss()
-                } label: {
-                    Image(systemName: Configuration.doneImageName)
-                    .tint(Configuration.controlColor)
-                    .font(.system(size: Configuration.controlSize))
-                }
-            }
+                Spacer()
+            }.padding([.leading, .top], 10)
         }.onChange(of: selectedTime) { newValue in
             gameSettings.timeSettings = newValue
         }.onAppear {
@@ -42,10 +33,36 @@ struct SettingsView: View {
         }
     }
     
+    var backButton: some View {
+        Button {
+            presentationMode.wrappedValue.dismiss()
+        } label: {
+            Image(systemName: Configuration.doneImageName)
+            .tint(Configuration.controlColor)
+            .font(.system(size: Configuration.controlSize))
+            Text("Settings")
+                .font(.largeTitle)
+                .tint(Color.Palette.primaryText)
+        }
+    }
+    
+    var picker: some View {
+        VStack(alignment: .leading) {
+            Text("Choose time")
+                .font(.title2)
+                .tint(Color.Palette.primaryText)
+            Picker(selection: $selectedTime, label: Text("Pick time limit per player")) {
+                ForEach(Array(TimeSettings.allCases), id: \.self) {
+                    Text($0.name)
+                }
+            }
+        }
+    }
+    
     enum Configuration {
         static let doneImageName = "arrow.backward.circle"
         static let controlColor = Color.Palette.accent
-        static let controlSize: CGFloat = 50
+        static let controlSize: CGFloat = 40
     }
 }
 
