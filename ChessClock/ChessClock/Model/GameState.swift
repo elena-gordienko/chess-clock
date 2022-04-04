@@ -28,5 +28,9 @@ final class GameState: ObservableObject {
             }
         }
     }
+    
+    func reset() {
+        state = .ready
+    }
 }
 

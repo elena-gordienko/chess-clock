@@ -16,6 +16,8 @@ struct ClockView: View {
     @State var remainingTimeWhite: Seconds = 0
     @State var remainingTimeBlack: Seconds = 0
     
+    @State var shouldShowGameOver: Bool = false
+    
     let timer = Timer
         .publish(every: 1, on: .main, in: .common)
         .autoconnect()
@@ -39,6 +41,11 @@ struct ClockView: View {
                 controlsView
             }
             .padding()
+        }
+        .alert(alertText, isPresented: $shouldShowGameOver) {
+            Button("OK", role: .cancel) {
+                gameState.reset()
+            }
         }
         .onReceive(timer) { _ in
             handleTimerEvent()
@@ -118,6 +125,7 @@ struct ClockView: View {
         let remainingTime = isWhite ? remainingTimeWhite : remainingTimeBlack
         guard remainingTime > 0 else {
             gameState.state = .timeRanOut
+            shouldShowGameOver = true
             gameSettings.gameInProgress = false
             return
         }
@@ -128,6 +136,13 @@ struct ClockView: View {
         }
     }
     
+    private var alertText: String {
+        guard gameState.state == .timeRanOut else { return "" }
+        let isWhiteLoser = gameState.isWhiteTurn
+        let loser = isWhiteLoser ? "White" : "Black"
+        let winner = isWhiteLoser ? "Black" : "White"
+        return "\(loser)'s time ran out, \(winner) won!"
+    }
     
     private func updateRemainingTime(with totalTime: Seconds) {
         remainingTimeBlack = totalTime
