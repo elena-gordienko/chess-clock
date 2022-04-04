@@ -22,6 +22,7 @@
 		145C475327F38CAC003F97E0 /* ChessClockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145C475227F38CAC003F97E0 /* ChessClockTests.swift */; };
 		145C476E27F38D4D003F97E0 /* ClockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145C476D27F38D4D003F97E0 /* ClockService.swift */; };
 		145C477227F3903D003F97E0 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145C477127F3903D003F97E0 /* ClockView.swift */; };
+		1489148927FB00D9003780DD /* TimingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1489148827FB00D8003780DD /* TimingStrategy.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		145C475827F38CAC003F97E0 /* ChessClockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChessClockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		145C476D27F38D4D003F97E0 /* ClockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockService.swift; sourceTree = "<group>"; };
 		145C477127F3903D003F97E0 /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		1489148827FB00D8003780DD /* TimingStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimingStrategy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				1415D83827F9EFFF008A4060 /* GameState.swift */,
 				1415D83D27F9F8AA008A4060 /* TimeSettings.swift */,
 				1415D83F27F9F971008A4060 /* GameSettings.swift */,
+				1489148827FB00D8003780DD /* TimingStrategy.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 			files = (
 				1415D83927F9EFFF008A4060 /* GameState.swift in Sources */,
 				1415D83E27F9F8AA008A4060 /* TimeSettings.swift in Sources */,
+				1489148927FB00D9003780DD /* TimingStrategy.swift in Sources */,
 				1415D84627FA2F74008A4060 /* SettingsView.swift in Sources */,
 				1415D84027F9F971008A4060 /* GameSettings.swift in Sources */,
 				1415D83427F9DFF1008A4060 /* WatchfaceView.swift in Sources */,

@@ -9,7 +9,7 @@ import Foundation
 
 // TODO: add implementations for different strategies
 
-enum TimeSettings: String, Equatable, CaseIterable {
+enum TimeSettings: Equatable, CaseIterable {
     case threeMinutes, fiveMinutes
     
     // FIXME: add an option with a specified time limit

@@ -12,6 +12,7 @@ struct SettingsView: View {
     
     @EnvironmentObject var gameSettings: GameSettings
     @State var selectedTime: TimeSettings = .threeMinutes
+    @State var selectedStrategy: TimingStrategy  = .simple(delay: 0)
     
     var body: some View {
         ZStack {
@@ -20,16 +21,24 @@ struct SettingsView: View {
                 VStack(alignment: .leading) {
                     backButton
                         .padding(.vertical, 10)
-                    picker
-                        .padding(.horizontal, 56)
+                    Group {
+                        picker
+                        strategyPicker
+                    }
+                    .padding(.horizontal, 56)
                     Spacer()
                 }
                 Spacer()
-            }.padding([.leading, .top], 10)
+            }.padding([.top], 10)
         }.onChange(of: selectedTime) { newValue in
             gameSettings.timeSettings = newValue
-        }.onAppear {
+        }
+        .onChange(of: selectedStrategy) { newValue in
+            gameSettings.timingStrategy = newValue
+        }
+        .onAppear {
             selectedTime = gameSettings.timeSettings
+            selectedStrategy = gameSettings.timingStrategy
         }
     }
     
@@ -53,6 +62,19 @@ struct SettingsView: View {
                 .tint(Color.Palette.primaryText)
             Picker(selection: $selectedTime, label: Text("Pick time limit per player")) {
                 ForEach(Array(TimeSettings.allCases), id: \.self) {
+                    Text($0.name)
+                }
+            }
+        }
+    }
+    
+    var strategyPicker: some View {
+        VStack(alignment: .leading) {
+            Text("Choose timing strategy")
+                .font(.title2)
+                .tint(Color.Palette.primaryText)
+            Picker(selection: $selectedStrategy, label: Text("Pick timing strategy")) {
+                ForEach(Array(TimingStrategy.allCases), id: \.self) {
                     Text($0.name)
                 }
             }
